@@ -32,9 +32,18 @@ html {
 }
 
 .header {
+    padding: 4rem 10rem;
     display: flex;
     justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5rem; /* lub dowolna wartość, która zachowuje wysokość nagłówka */
+    background-color: #fff; /* dodatkowy styl, aby nagłówek był widoczny */
+    z-index: 999; /* zapewnia, że nagłówek będzie zawsze na wierzchu */
 }
+
 
 .header--name {
     font-size: 2.2rem;
@@ -167,19 +176,12 @@ html {
 
 
 
-
-
-
-
-
-
-
 @media only screen and (max-width: 1000px) {
     .header--nav ul {
         display: none;
         position: absolute;
         flex-direction: column;
-        top: 50%;
+        top: 500%;
         left: 50%;
         transform: translate(-50%, -50%);
         text-align: center;
@@ -200,6 +202,9 @@ html {
     .nav-hamburger-li i{
         display: block;
         z-index: 100;
+        position: absolute;
+        top: .9rem;
+        right: 2rem;
     }
 
     .landing-container {
@@ -208,9 +213,31 @@ html {
     }
 
     .header--name {
-        font-size: 1.3rem;
+        font-size: 2rem;
         font-weight: 500;
+        position: absolute;
+        top: 2.3rem;
+        left: 4rem;
+
     }
+
+    .section--landing__left h1 {
+        font-size: 2rem;
+    }
+
+    .section--landing {
+        padding-top: 8rem;
+        flex-direction: column;
+    }
+
+    .section--landing__left, .section--landing__right {
+        width: 100%;
+    }
+
+    .section--landing__right {
+        margin-top: 3rem;
+    }
+
 }
 
 
