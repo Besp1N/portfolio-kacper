@@ -2,17 +2,38 @@ const hamburger = document.querySelector('.nav-hamburger-li');
 const list = document.querySelector('.header--nav ul');
 const backdrop = document.createElement('div');
 backdrop.classList.add('backdrop');
-backdrop.style.backgroundColor = "white"; // Ustaw kolor tła na biały
+backdrop.style.backgroundColor = "white";
 document.body.appendChild(backdrop);
 
 hamburger.addEventListener('click', function () {
    if (list.style.display === "flex") {
-      list.style.display = "none";
-      backdrop.style.display = "none"; // Ukryj tło, gdy menu jest zamknięte
-      document.body.style.overflow = "auto"; // Przywróć overflow do wartości domyślnej
+      closeMenu();
    } else {
-      list.style.display = "flex";
-      backdrop.style.display = "block"; // Pokaż tło, gdy menu jest otwarte
-      document.body.style.overflow = "hidden"; // Ukryj overflow, gdy menu jest otwarte
+      openMenu();
    }
 });
+
+function closeMenu() {
+   list.style.display = "none";
+   backdrop.style.display = "none";
+   document.body.style.overflow = "auto";
+}
+
+function openMenu() {
+   list.style.display = "flex";
+   backdrop.style.display = "block";
+   document.body.style.overflow = "hidden";
+}
+
+function resizeHandler() {
+   if (window.innerWidth >= 1000) {
+      list.style.display = "flex";
+   } else if (!hamburger.classList.contains('active')) {
+      closeMenu();
+   }
+}
+
+
+window.addEventListener('resize', resizeHandler);
+
+window.addEventListener('load', resizeHandler);
