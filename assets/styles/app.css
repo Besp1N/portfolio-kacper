@@ -92,7 +92,7 @@ body {
 /*}*/
 
 .section--landing {
-    padding-top: 15rem;
+    padding-top: 10rem;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -174,6 +174,45 @@ body {
     display: flex;
     justify-content: center;
     align-items: center; /* Wyśrodkowanie obrazu w poziomie */
+}
+
+.glass {
+    background: linear-gradient(
+            135deg,
+            rgba(255, 255, 255, 0.1),
+            rgba(255, 255, 255, 0)
+    );
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 2rem;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    padding: 3rem;
+    transition: all 0.3s ease; /* Dodaj przejście dla płynności animacji */
+}
+
+.glass:hover {
+    transform: scale(1.1); /* Przybliż przycisk na hoverze */
+}
+
+.explore-button {
+    padding: 1.3rem 2.5rem;
+    width: 15rem;
+    text-align: center;
+    cursor: pointer;
+
+}
+
+.explore-button a {
+    text-decoration: none;
+    color: var(--color-black);
+}
+
+.explore-button-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 6rem;
 }
 
 
