@@ -43,9 +43,12 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    height: 5rem; /* lub dowolna wartość, która zachowuje wysokość nagłówka */
-    background-color: #fff; /* dodatkowy styl, aby nagłówek był widoczny */
-    z-index: 999; /* zapewnia, że nagłówek będzie zawsze na wierzchu */
+    height: 5rem;
+    background-color: #fff;
+    align-items: center;
+
+    z-index: 999;
+
 }
 
 
@@ -188,11 +191,11 @@ body {
     border: 1px solid rgba(255, 255, 255, 0.18);
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
     padding: 3rem;
-    transition: all 0.3s ease; /* Dodaj przejście dla płynności animacji */
+    transition: all 0.3s ease;
 }
 
 .glass:hover {
-    transform: scale(1.1); /* Przybliż przycisk na hoverze */
+    transform: scale(1.1);
 }
 
 .explore-button {

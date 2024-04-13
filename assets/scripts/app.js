@@ -28,7 +28,7 @@ nightModeMobile.addEventListener('click', function () {
       document.documentElement.style.setProperty('--color-white', '#fff');
       document.documentElement.style.setProperty('--color-black', '#000');
       document.body.style.color = '#000';
-      document.querySelector('.header').style.backgroundColor = 'initial';
+      document.querySelector('.header').style.backgroundColor = '#fff';
       document.querySelector('.header').style.color = 'initial';
    }
 });
