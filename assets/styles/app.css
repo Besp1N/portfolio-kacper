@@ -215,6 +215,10 @@ body {
     margin-top: 6rem;
 }
 
+.night-mode {
+    cursor: pointer;
+}
+
 
 
 
@@ -278,6 +282,10 @@ body {
     }
 
     .section--landing__right {
+        margin-top: 3rem;
+    }
+
+    .explore-button-container {
         margin-top: 3rem;
     }
 
