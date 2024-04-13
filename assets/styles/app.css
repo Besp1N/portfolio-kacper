@@ -219,6 +219,10 @@ body {
     cursor: pointer;
 }
 
+.night {
+    display: none;
+    cursor: pointer;
+}
 
 
 
@@ -251,7 +255,7 @@ body {
         z-index: 100;
         position: absolute;
         top: .9rem;
-        right: 2rem;
+        right: 1rem;
     }
 
     .landing-container {
@@ -287,6 +291,13 @@ body {
 
     .explore-button-container {
         margin-top: 3rem;
+    }
+
+    .night {
+        display: block;
+        position: absolute;
+        top: 2.2rem;
+        right: 6rem;
     }
 
 }
