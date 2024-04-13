@@ -100,6 +100,20 @@ html {
     right: 4rem;
 }
 
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(10px); /* Dostosuj intensywność rozmycia według potrzeb */
+    z-index: 1; /* Upewnij się, że jest nad wszystkim, ale pod listą nawigacyjną i hamburgerem */
+    display: none; /* Początkowo ukryte */
+}
+
+
+
+
 @media only screen and (max-width: 1000px) {
     .header--nav ul {
         display: none;
@@ -109,15 +123,22 @@ html {
         left: 50%;
         transform: translate(-50%, -50%);
         text-align: center;
-        width: 100%;
-        background-color: red;
+        z-index: 100;
     }
 
-    .nav-hamburger-li {
+    .header--nav ul li a::after {
+        height: 0;
+
+    }
+
+    .nav-hamburger-li,
+    .nav-hamburger-li i{
         display: block;
+        z-index: 100;
     }
 
     .landing-container {
+        position: relative;
         padding: 2rem 4rem;
     }
 
