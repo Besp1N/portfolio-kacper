@@ -39,7 +39,7 @@ html {
 .header--name {
     font-size: 2.2rem;
     font-weight: 400;
-    letter-spacing: .5rem;
+    letter-spacing: .2rem;
 }
 
 .header--nav ul{
@@ -111,6 +111,66 @@ html {
     display: none; /* Początkowo ukryte */
 }
 
+.auto-type {
+    color: var(--primary-color-first);
+}
+
+.section--landing__left h1 {
+    font-size: 4rem;
+}
+
+.introduction--section {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.introduction-h3 span {
+    color: rgb(184, 84, 255);
+}
+
+.introduction-h3 {
+    margin-bottom: 1rem;
+}
+
+.introduction--section > p {
+    letter-spacing: .2rem;
+}
+
+.download-cv-button a {
+    display: inline-block; /* Ustawienie na inline-block pozwoli na efekt transformacji */
+    text-decoration: none;
+    background-color: var(--second-color-dark);
+    padding: 1.3rem 2.5rem; /* Dodatkowy padding poziomy dla lepszego wyglądu */
+    border-radius: 3rem;
+    color: var(--color-black);
+    transition: transform 0.3s ease; /* Zmiana tylko transformacji */
+}
+
+.download-cv-button a:hover {
+    transform: scale(1.1); /* Poprawienie transformacji na jednolity */
+}
+
+.my-img img {
+    height: 45rem;
+    border-radius: 3rem;
+    align-self: center; /* Wyśrodkowanie obrazu w pionie wewnątrz kontenera */
+}
+
+.my-img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Wyśrodkowanie obrazu w poziomie */
+}
+
+
+
+
+
+
+
+
+
 
 
 
@@ -124,6 +184,11 @@ html {
         transform: translate(-50%, -50%);
         text-align: center;
         z-index: 100;
+    }
+
+    .header--nav ul li a {
+        font-size: 3rem;
+        font-weight: 700;
     }
 
     .header--nav ul li a::after {
