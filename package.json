@@ -1,0 +1,14 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "My portfolio",
+  "main": "assets/scripts/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kacper Karabinowski",
+  "license": "ISC",
+  "dependencies": {
+    "typed.js": "^2.1.0"
+  }
+}
