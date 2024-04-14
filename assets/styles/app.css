@@ -227,11 +227,50 @@ body {
     cursor: pointer;
 }
 
-.about-container {
+.about--container {
     padding: 4rem 10rem;
     font-size: 2rem;
-    background-color: red;
 }
+
+.about--container h2 {
+    font-weight: 500;
+    font-size: 5rem;
+    text-align: center;
+    background-image: linear-gradient(var(--primary-color-first), var(--second-color-dark));
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.about-flex {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+}
+
+.about--container__introduction {
+    width: 55%;
+}
+
+.about--container__skills {
+    width: 45%;
+    text-align: right;
+}
+
+.about-info p:first-child {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+.about-info p:last-child {
+    letter-spacing: .15rem;
+}
+
+.about-info p:last-child span {
+    color: rgb(184, 84, 255);
+    font-weight: 500;
+}
+
+
 
 
 
