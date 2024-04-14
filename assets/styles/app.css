@@ -227,10 +227,19 @@ body {
     cursor: pointer;
 }
 
+.about-container {
+    padding: 4rem 10rem;
+    font-size: 2rem;
+    background-color: red;
+}
+
 
 
 
 @media only screen and (max-width: 1000px) {
+    .landing-container {
+        height: auto;
+    }
     .header--nav ul {
         display: none;
         position: absolute;
@@ -305,6 +314,12 @@ body {
         position: absolute;
         top: 2.2rem;
         right: 6rem;
+    }
+
+    .my-img img {
+        height: 30rem;
+        border-radius: 5rem;
+
     }
 
 }

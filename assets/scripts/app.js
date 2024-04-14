@@ -7,6 +7,8 @@ const nightModeMobile = document.querySelector('.night');
 const nightModeIcon = document.querySelector('.night-mode');
 const mobileNightModeIcon = document.querySelector('.night');
 
+const glass = document.querySelector('.glass');
+
 backdrop.classList.add('backdrop');
 backdrop.style.backgroundColor = "white";
 document.body.appendChild(backdrop);
@@ -31,6 +33,7 @@ nightModeMobile.addEventListener('click', function () {
       document.querySelector('.download-cv-button a').style.color = '#000';
       mobileNightModeIcon.classList.remove('uil-moon');
       mobileNightModeIcon.classList.add('uil-sun');
+      glass.style.boxShadow = '0 8px 32px 0 rgba(255, 255, 255, 0.37)';
    } else {
       backdrop.style.backgroundColor = "white";
       document.body.appendChild(backdrop);
@@ -43,6 +46,7 @@ nightModeMobile.addEventListener('click', function () {
       document.querySelector('.header').style.color = 'initial';
       mobileNightModeIcon.classList.remove('uil-sun');
       mobileNightModeIcon.classList.add('uil-moon');
+      glass.style.boxShadow = '0 8px 32px 0 rgba(0, 0, 0, 0.37)';
    }
 });
 
@@ -62,6 +66,7 @@ nightModeButton.addEventListener('click', function () {
       document.querySelector('.download-cv-button a').style.color = '#000';
       nightModeIcon.classList.remove('uil-moon');
       nightModeIcon.classList.add('uil-sun');
+      glass.style.boxShadow = '0 8px 32px 0 rgba(255, 255, 255, 0.37)';
    } else {
       // Przywrócenie pierwotnych kolorów
       document.documentElement.style.setProperty('--body-color', 'rgb(250, 250, 250)');
@@ -72,6 +77,7 @@ nightModeButton.addEventListener('click', function () {
       document.querySelector('.header').style.color = 'initial';
       nightModeIcon.classList.remove('uil-sun');
       nightModeIcon.classList.add('uil-moon');
+      glass.style.boxShadow = '0 8px 32px 0 rgba(0, 0, 0, 0.37)';
    }
 });
 
