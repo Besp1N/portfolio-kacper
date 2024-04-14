@@ -253,7 +253,6 @@ body {
 
 .about--container__skills {
     width: 45%;
-    text-align: right;
 }
 
 .about-info p:first-child {
@@ -268,6 +267,15 @@ body {
 .about-info p:last-child span {
     color: rgb(184, 84, 255);
     font-weight: 500;
+}
+
+.skills {
+    margin-left: auto;
+
+    width: 75%;
+    background-image: linear-gradient(to left, var(--primary-color-first), rgb(184, 84, 255));
+    border-radius: 2rem;
+    padding: 2rem;
 }
 
 
