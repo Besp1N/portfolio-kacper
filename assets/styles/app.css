@@ -281,12 +281,12 @@ body {
 .skills p:first-child {
     text-align: center;
     font-size: 2.5rem;
-    color: var(--color-white);
+    color: #fff;
     font-weight: 500;
 }
 
 .skills-list {
-    color: var(--color-white);
+    color: #fff;
 }
 
 .skills-list ul {

@@ -27,7 +27,7 @@
               <div class="dot"></div>
             </li>
             <li class="header-desktop-li">
-              <a href="#">About me</a>
+              <a href="#explore">About me</a>
               <div class="dot"></div>
             </li>
             <li class="header-desktop-li">
@@ -118,7 +118,7 @@
                       <li>CSS, SCSS</li>
                       <li>GIT, RestAPI, JWT</li>
                       <li>Docker</li>
-                      <li>LAMP</li>
+                      <li>LAMP Stack</li>
                       <li>Postman</li>
                       <li>Figma</li>
                       <li>Jira</li>
@@ -130,6 +130,7 @@
     </div>
     <script src="assets/scripts/app.js"></script>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
     <script>
       const typed = new Typed(".auto-type", {
         strings: ["PHP Symfony Developer", "Music Enthusiast", "Code Composer"],
@@ -138,5 +139,9 @@
         loop: true,
       });
     </script>
+  <script>
+      ScrollReveal().reveal(".about--container__skills", {reset: true});
+      ScrollReveal().reveal(".about--container__introduction", {reset: true});
+  </script>
   </body>
 </html>
