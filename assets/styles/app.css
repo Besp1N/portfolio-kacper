@@ -228,8 +228,9 @@ body {
 }
 
 .about--container {
-    padding: 4rem 10rem;
+    padding: 6rem 10rem;
     font-size: 2rem;
+    margin-top: -2rem;
 }
 
 .about--container h2 {
@@ -271,11 +272,30 @@ body {
 
 .skills {
     margin-left: auto;
-
     width: 75%;
     background-image: linear-gradient(to left, var(--primary-color-first), rgb(184, 84, 255));
     border-radius: 2rem;
     padding: 2rem;
+}
+
+.skills p:first-child {
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--color-white);
+    font-weight: 500;
+}
+
+.skills-list {
+    color: var(--color-white);
+}
+
+.skills-list ul {
+    list-style: none;
+}
+
+.skills-list ul li {
+    margin-bottom: .5rem;
+    font-size: 2rem;
 }
 
 
@@ -366,7 +386,28 @@ body {
     .my-img img {
         height: 30rem;
         border-radius: 5rem;
+    }
 
+    .about-flex {
+        flex-direction: column;
+    }
+
+    .about--container__introduction,
+    .about--container__skills {
+        width: 100%;
+    }
+
+    .about--container {
+        padding: 2rem 4rem;
+    }
+
+    .about--container__skills{
+        margin-top: 5rem;
+    }
+
+    .skills {
+        width: 100%;
+        margin-left: 0;
     }
 
 }
