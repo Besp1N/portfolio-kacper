@@ -14,6 +14,8 @@ let nightMode = false; // Zmienna śledząca stan trybu nocnego
 nightModeMobile.addEventListener('click', function () {
    nightMode = !nightMode;
    if (nightMode) {
+      backdrop.style.backgroundColor = "black";
+      document.body.appendChild(backdrop);
       // Zmiana kolorów na tryb nocny
       document.documentElement.style.setProperty('--body-color', '#000');
       document.documentElement.style.setProperty('--color-white', '#000');
@@ -23,6 +25,8 @@ nightModeMobile.addEventListener('click', function () {
       document.querySelector('.header').style.color = '#fff';
       document.querySelector('.download-cv-button a').style.color = '#000';
    } else {
+      backdrop.style.backgroundColor = "white";
+      document.body.appendChild(backdrop);
       // Przywrócenie pierwotnych kolorów
       document.documentElement.style.setProperty('--body-color', 'rgb(250, 250, 250)');
       document.documentElement.style.setProperty('--color-white', '#fff');

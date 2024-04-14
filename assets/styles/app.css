@@ -296,6 +296,10 @@ body {
         margin-top: 3rem;
     }
 
+    .night-mode {
+        display: none;
+    }
+
     .night {
         display: block;
         position: absolute;
