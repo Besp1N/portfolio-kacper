@@ -4,13 +4,18 @@ const backdrop = document.createElement('div');
 const nightModeButton = document.querySelector('.night-mode');
 const nightModeMobile = document.querySelector('.night');
 
+const nightModeIcon = document.querySelector('.night-mode');
+const mobileNightModeIcon = document.querySelector('.night');
+
 backdrop.classList.add('backdrop');
 backdrop.style.backgroundColor = "white";
 document.body.appendChild(backdrop);
 
 
-let nightMode = false; // Zmienna śledząca stan trybu nocnego
+let nightMode = false;
 
+
+// MOBILE
 nightModeMobile.addEventListener('click', function () {
    nightMode = !nightMode;
    if (nightMode) {
@@ -24,6 +29,8 @@ nightModeMobile.addEventListener('click', function () {
       document.querySelector('.header').style.backgroundColor = '#000';
       document.querySelector('.header').style.color = '#fff';
       document.querySelector('.download-cv-button a').style.color = '#000';
+      mobileNightModeIcon.classList.remove('uil-moon');
+      mobileNightModeIcon.classList.add('uil-sun');
    } else {
       backdrop.style.backgroundColor = "white";
       document.body.appendChild(backdrop);
@@ -34,11 +41,15 @@ nightModeMobile.addEventListener('click', function () {
       document.body.style.color = '#000';
       document.querySelector('.header').style.backgroundColor = '#fff';
       document.querySelector('.header').style.color = 'initial';
+      mobileNightModeIcon.classList.remove('uil-sun');
+      mobileNightModeIcon.classList.add('uil-moon');
    }
 });
 
+
+// DESKTOP
 nightModeButton.addEventListener('click', function () {
-   nightMode = !nightMode; // Zmień stan trybu nocnego po każdym kliknięciu
+   nightMode = !nightMode;
 
    if (nightMode) {
       // Zmiana kolorów na tryb nocny
@@ -49,6 +60,8 @@ nightModeButton.addEventListener('click', function () {
       document.querySelector('.header').style.backgroundColor = '#000';
       document.querySelector('.header').style.color = '#fff';
       document.querySelector('.download-cv-button a').style.color = '#000';
+      nightModeIcon.classList.remove('uil-moon');
+      nightModeIcon.classList.add('uil-sun');
    } else {
       // Przywrócenie pierwotnych kolorów
       document.documentElement.style.setProperty('--body-color', 'rgb(250, 250, 250)');
@@ -57,6 +70,8 @@ nightModeButton.addEventListener('click', function () {
       document.body.style.color = '#000';
       document.querySelector('.header').style.backgroundColor = 'initial';
       document.querySelector('.header').style.color = 'initial';
+      nightModeIcon.classList.remove('uil-sun');
+      nightModeIcon.classList.add('uil-moon');
    }
 });
 
