@@ -114,3 +114,11 @@ function resizeHandler() {
 
 window.addEventListener("resize", resizeHandler);
 window.addEventListener("load", resizeHandler);
+
+const mobileListItems = document.querySelectorAll(".header--nav li");
+mobileListItems.forEach(function (item) {
+  item.addEventListener("click", function (event) {
+    closeMenu();
+    event.stopPropagation();
+  });
+});
