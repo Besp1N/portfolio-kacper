@@ -154,17 +154,17 @@ body {
 }
 
 .download-cv-button a {
-  display: inline-block; /* Ustawienie na inline-block pozwoli na efekt transformacji */
+  display: inline-block;
   text-decoration: none;
   background-color: var(--second-color-dark);
-  padding: 1.3rem 2.5rem; /* Dodatkowy padding poziomy dla lepszego wyglądu */
+  padding: 1.3rem 2.5rem;
   border-radius: 3rem;
-  color: var(--color-black);
-  transition: transform 0.3s ease; /* Zmiana tylko transformacji */
+  color: #000;
+  transition: transform 0.3s ease;
 }
 
 .download-cv-button a:hover {
-  transform: scale(1.1); /* Poprawienie transformacji na jednolity */
+  transform: scale(1.1);
 }
 
 .my-img img {
@@ -196,17 +196,17 @@ body {
 }
 
 .glass-non-button {
-    background: linear-gradient(
-            135deg,
-            rgba(255, 255, 255, 0.1),
-            rgba(255, 255, 255, 0)
-    );
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border-radius: 2rem;
-    border: 1px solid rgba(255, 255, 255, 0.18);
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-    padding: 3rem;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0)
+  );
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  padding: 3rem;
 }
 
 .glass:hover {
@@ -290,7 +290,10 @@ body {
 .skills {
   margin-left: auto;
   width: 75%;
-  background-image: linear-gradient(rgb(160, 90, 200), var(--primary-color-second));
+  background-image: linear-gradient(
+    rgb(160, 90, 200),
+    var(--primary-color-second)
+  );
   border-radius: 2rem;
   padding: 2rem;
 }
@@ -324,68 +327,103 @@ body {
 }
 
 .projects-container {
-    padding: 4rem 10rem;
-    font-size: 2rem;
+  padding: 4rem 10rem;
+  font-size: 2rem;
 }
 
 .projects-container h2 {
-    font-weight: 500;
-    font-size: 5rem;
-    text-align: center;
-    background-image: linear-gradient(
-            var(--primary-color-first),
-            var(--second-color-dark)
-    );
-    -webkit-background-clip: text;
-    color: transparent;
+  font-weight: 500;
+  font-size: 5rem;
+  text-align: center;
+  background-image: linear-gradient(
+    var(--primary-color-first),
+    var(--second-color-dark)
+  );
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 .project-title {
-    font-size: 3rem;
+  font-size: 3rem;
 }
 
-.project-link{
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+.project-link {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .project-description p {
-    font-size: 2.2rem;
-    margin-bottom: 2rem;
-    letter-spacing: 0.15rem;
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+  letter-spacing: 0.15rem;
 }
 
 .project-description p span {
-    color: rgb(184, 84, 255);
-    font-weight: 500;
+  color: rgb(184, 84, 255);
+  font-weight: 500;
 }
 
 .project-tech-stack {
-    width: 30%;
-    margin-left: auto;
+  width: 30%;
+  margin-left: auto;
 }
 
 .project-tech-stack p {
-    font-size: 3rem;
-    margin-bottom: 2rem;
+  font-size: 3rem;
+  margin-bottom: 2rem;
 }
 
 .project-tech-stack ul {
-    list-style:  none;
+  list-style: none;
 }
 
-.project-tech-stack ul li{
-    font-size: 2.2rem;
-    margin-bottom: 1.5rem;
-    text-align: center;
+.project-tech-stack ul li {
+  font-size: 2.2rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
 }
 
 .project {
-    margin-top: 3rem;
+  margin-top: 3rem;
 }
 
+.socials {
+  display: flex;
+  gap: 10rem;
+}
 
+.socials-img {
+  width: 8rem;
+}
 
+.contact-container {
+  font-size: 2rem;
+  padding: 4rem 10rem;
+  background-image: linear-gradient(
+          rgb(160, 90, 200),
+          var(--primary-color-second)
+  );
+}
+.contact-container h2 {
+  font-weight: 500;
+  font-size: 5rem;
+  text-align: center;
+  color: #000;
+  letter-spacing: 0.5rem;
+}
+
+.mail {
+  margin: 2rem 0;
+  font-size: 3rem;
+  color: #000;
+}
+
+.footer {
+  font-size: 2rem;
+  padding: 4rem 10rem;
+  background-color: #000;
+  color: #fff;
+}
 
 
 
@@ -433,12 +471,32 @@ body {
   }
 
   .projects-container {
-      padding: 2rem 4rem;
-      margin-top: 5rem;
+    margin-top: 5rem;
+    padding: 4rem 2rem;
+  }
+
+  .contact-container {
+    padding: 2rem 4rem;
+  }
+
+  .footer {
+    padding: 2rem 4rem;
+  }
+
+  .socials {
+    justify-content: space-between;
+  }
+
+  .mail {
+    font-size: 2rem;
+  }
+
+  .socials-img {
+    width: 6rem;
   }
 
   .project-tech-stack {
-      width: 100%;
+    width: 100%;
   }
 
   .header--name {

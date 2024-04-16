@@ -40,7 +40,7 @@
               <div class="dot"></div>
             </li>
             <li class="header-desktop-li">
-              <a href="#">Contact</a>
+              <a href="#contact">Contact</a>
               <div class="dot"></div>
             </li>
             <li class="header-desktop-li">
@@ -75,7 +75,7 @@
             </div>
 
             <div class="download-cv-button">
-              <a href="#">Download CV <i class="uil uil-file-alt"></i></a>
+              <a href="assets/pdf/Kacper_Karabinowski_CV.pdf" download="">Download CV <i class="uil uil-file-alt"></i></a>
             </div>
           </div>
         </div>
@@ -319,8 +319,9 @@
             <span>Built on Symfony 7.0,</span> the application embodies modern
             development practices and utilizes the latest Symfony features to
             deliver a seamless user experience. Despite encountering challenges
-            during the implementation of OAuth2, <span>I successfully overcame them</span>,
-            ensuring that the authentication process functions flawlessly.
+            during the implementation of OAuth2,
+            <span>I successfully overcame them</span>, ensuring that the
+            authentication process functions flawlessly.
           </p>
         </div>
       </div>
@@ -339,10 +340,35 @@
       </div>
     </div>
 
+    <div class="contact-container" id="contact">
+      <h2>Contact</h2>
+      <div class="socials">
+        <a href="https://github.com/Besp1N">
+          <img
+            class="socials-img"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original-wordmark.svg"
+          />
+        </a>
+        <a href="https://www.linkedin.com/in/kacper-karabinowski-21b272273/">
+          <img class="socials-img"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-original.svg"
+          />
+        </a>
+      </div>
 
-    <div class="contact-container">
+      <div class="mail">karabinowskikacper@gmail.com</div>
 
+      <div class="download-cv-button">
+        <a href="assets/pdf/Kacper_Karabinowski_CV.pdf" download="">Download CV <i class="uil uil-file-alt"></i></a>
+      </div>
     </div>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <p>© 2024 Kacper Karabinowski - Portfolio</p>
+        <p>Wyrażam zgodę na przetwarzanie moich danych osobowych w celach związanych z korzystaniem z tej strony internetowej.</p>
+      </div>
+    </footer>
 
     <script src="assets/scripts/app.js"></script>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
@@ -358,6 +384,8 @@
     <script>
       ScrollReveal().reveal(".about--container__skills", { reset: true });
       ScrollReveal().reveal(".about--container__introduction", { reset: true });
+      ScrollReveal().reveal(".project", { reset: true, delay: 250 });
+      ScrollReveal().reveal(".project-tech-stack", { reset: true, delay: 250 });
     </script>
   </body>
 </html>
