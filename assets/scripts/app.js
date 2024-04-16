@@ -118,7 +118,9 @@ window.addEventListener("load", resizeHandler);
 const mobileListItems = document.querySelectorAll(".header--nav li");
 mobileListItems.forEach(function (item) {
   item.addEventListener("click", function (event) {
-    closeMenu();
-    event.stopPropagation();
+    if (window.innerWidth < 1000) {
+      closeMenu();
+      event.stopPropagation();
+    }
   });
 });
