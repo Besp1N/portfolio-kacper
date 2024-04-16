@@ -1,0 +1,10 @@
+<li>JavaScript ES14</li>
+<li>SQL</li>
+<li>HTML, XHTML, XML</li>
+<li>CSS, SCSS</li>
+<li>GIT, RestAPI, JWT</li>
+<li>Docker</li>
+<li>LAMP Stack</li>
+<li>Postman</li>
+<li>Figma</li>
+<li>Jira</li>
